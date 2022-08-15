@@ -55,122 +55,19 @@ var usuarios = [{
 ];
 
 
-/*Categorias*/
-var categorias = [{
-    nombreCategoria: "Farmacias",
-    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-    backgroundColor: `style="background-color: ${colorAleatorio()}"`,
-    icono: "fas fa-briefcase-medical",
-    empresas: [{
-        nombreEmpresa: "Siman",
-        imagen: "img/Salud/Farmacias/1.far.png",
-        productos: [{
-            nombreProducto: "Producto 1",
-            descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-            precio: 49.99
-        },
-            {
-                nombreProducto: "Producto 2",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-            {
-                nombreProducto: "Producto 3",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-            {
-                nombreProducto: "Producto 4",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            }
-        ]
-    },
-        {
-            nombreEmpresa: "Kielsa",
-            imagen: "img/Salud/Farmacias/2.far.png",
-            productos: [{
-                nombreProducto: "Producto 1",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-                {
-                    nombreProducto: "Producto 2",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 3",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 4",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                }
-            ]
-        },
-        {
-            nombreEmpresa: "Farmacity",
-            imagen: "img/Salud/Farmacias/3.far.png",
-            productos: [{
-                nombreProducto: "Producto 1",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-                {
-                    nombreProducto: "Producto 2",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 3",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 4",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                }
-            ]
-        },
-        {
-            nombreEmpresa: "Farmacias del Ahorro",
-            imagen: "img/Salud/Farmacias/4.far.png",
-            productos: [{
-                nombreProducto: "Producto 1",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-                {
-                    nombreProducto: "Producto 2",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 3",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 4",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                }
-            ]
-        }
-    ]
-},
+/*---------------------------------Categorias------------------------------*/
+var categorias = [
+    /***************Tecnologia**************** */
     {
-        nombreCategoria: "Restaurantes",
+        nombreCategoria: "Tecnologia",
         descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
         backgroundColor: `style="background-color: ${colorAleatorio()}"`,
-        icono: "fas fa-utensils",
+        icono: "fa-solid fa-mobile-screen",
+       
+       /*Samdung-Marca*/
         empresas: [{
-            nombreEmpresa: "Empresa 1",
-            imagen: "img/banner.jpg",
+            nombreEmpresa: "Samsung",
+            imagen: "img/Tecnologia/Empresas/1.emp.png",
             productos: [{
                 nombreProducto: "Producto 1",
                 descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -193,9 +90,10 @@ var categorias = [{
                 }
             ]
         },
+        /*Sony-Marca*/
             {
-                nombreEmpresa: "Empresa 2",
-                imagen: "img/banner.jpg",
+                nombreEmpresa: "Sony",
+                imagen: "img/Tecnologia/Empresas/2.emp.png",
                 productos: [{
                     nombreProducto: "Producto 1",
                     descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -218,9 +116,10 @@ var categorias = [{
                     }
                 ]
             },
+            /*HP-Marca*/
             {
-                nombreEmpresa: "Empresa 3",
-                imagen: "img/banner.jpg",
+                nombreEmpresa: "HP",
+                imagen: "img/Tecnologia/Empresas/3.emp.png",
                 productos: [{
                     nombreProducto: "Producto 1",
                     descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -240,153 +139,18 @@ var categorias = [{
                         nombreProducto: "Producto 4",
                         descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
                         precio: 49.99
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        nombreCategoria: "Salud",
-        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-        backgroundColor: `style="background-color: ${colorAleatorio()}"`,
-        icono: "fas fa-file-medical-alt",
-        empresas: [{
-            nombreEmpresa: "Empresa 1",
-            imagen: "img/banner.jpg",
-            productos: [{
-                nombreProducto: "Producto 1",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-                {
-                    nombreProducto: "Producto 2",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 3",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 4",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                }
-            ]
-        },
-            {
-                nombreEmpresa: "Empresa 2",
-                imagen: "img/banner.jpg",
-                productos: [{
-                    nombreProducto: "Producto 1",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                    {
-                        nombreProducto: "Producto 2",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    },
-                    {
-                        nombreProducto: "Producto 3",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
                     },
                     {
                         nombreProducto: "Producto 4",
                         descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
+                        precio: 54.99
                     }
                 ]
             },
+            /*Apple-Marca*/
             {
-                nombreEmpresa: "Empresa 3",
-                imagen: "img/banner.jpg",
-                productos: [{
-                    nombreProducto: "Producto 1",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                    {
-                        nombreProducto: "Producto 2",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    },
-                    {
-                        nombreProducto: "Producto 3",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    },
-                    {
-                        nombreProducto: "Producto 4",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    }
-                ]
-            }
-        ]
-    },
-    ///Cat
-  
-    {
-        nombreCategoria: "Bebidas",
-        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-        backgroundColor: `style="background-color: ${colorAleatorio()}"`,
-        icono: "fas fa-wine-bottle",
-        empresas: [{
-            nombreEmpresa: "Empresa 1",
-            imagen: "img/banner.jpg",
-            productos: [{
-                nombreProducto: "Producto 1",
-                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                precio: 49.99
-            },
-                {
-                    nombreProducto: "Producto 2",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 3",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                {
-                    nombreProducto: "Producto 4",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                }
-            ]
-        },
-            {
-                nombreEmpresa: "Empresa 2",
-                imagen: "img/banner.jpg",
-                productos: [{
-                    nombreProducto: "Producto 1",
-                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                    precio: 49.99
-                },
-                    {
-                        nombreProducto: "Producto 2",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    },
-                    {
-                        nombreProducto: "Producto 3",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    },
-                    {
-                        nombreProducto: "Producto 4",
-                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
-                        precio: 49.99
-                    }
-                ]
-            },
-            {
-                nombreEmpresa: "Empresa 3",
-                imagen: "img/banner.jpg",
+                nombreEmpresa: "Apple",
+                imagen: "img/Tecnologia/Empresas/4.emp.png",
                 productos: [{
                     nombreProducto: "Producto 1",
                     descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -415,7 +179,347 @@ var categorias = [{
                 ]
             }
         ]
-    }
+    },
+    /***********Comida-Restaurantes***************/ 
+    {
+        nombreCategoria: "Restaurantes",
+        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        backgroundColor: `style="background-color: ${colorAleatorio()}"`,
+        icono: "fa-solid fa-utensils",
+      
+        empresas: [{
+             /*Little caesars-Res*/ 
+            nombreEmpresa: "Little Caesars",
+            imagen: "img/Comida/Restaurantes/1.res.png",
+            productos: [{
+                nombreProducto: "Producto 1",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+                {
+                    nombreProducto: "Producto 2",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 3",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 4",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                }
+            ]
+        },
+         /*KFC-Res*/ 
+            {
+                nombreEmpresa: "KFC",
+                imagen: "img/Comida/Restaurantes/2.res.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            },
+            /*Burger king-Res*/ 
+            {
+                nombreEmpresa: "Burger King",
+                imagen: "img/Comida/Restaurantes/3.res.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            },
+            /*Taco Bell-Res*/ 
+            {
+                nombreEmpresa: "Taco Bell",
+                imagen: "img/Comida/Restaurantes/4.res.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            }
+        ]
+    },
+    {
+    /**********Salud-Farmacias***********/ 
+    nombreCategoria: "Farmacias",
+    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    backgroundColor: `style="background-color: ${colorAleatorio()}"`,
+    icono: "fa-solid fa-suitcase-medical",
+   
+    empresas: [{
+        /*Siman-Far*/
+        nombreEmpresa: "Siman",
+        imagen: "img/Salud/Farmacias/1.far.png",
+        productos: [{
+            nombreProducto: "Producto 1",
+            descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+            precio: 49.99
+        },
+            {
+                nombreProducto: "Producto 2",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+            {
+                nombreProducto: "Producto 3",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+            {
+                nombreProducto: "Producto 4",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            }
+        ]
+    },
+     /*Kielsa-Far*/ 
+        {
+            nombreEmpresa: "Kielsa",
+            imagen: "img/Salud/Farmacias/2.far.png",
+            productos: [{
+                nombreProducto: "Producto 1",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+                {
+                    nombreProducto: "Producto 2",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 3",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 4",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                }
+            ]
+        },
+         /*Farmacity-Far*/ 
+        {
+            nombreEmpresa: "Farmacity",
+            imagen: "img/Salud/Farmacias/3.far.png",
+            productos: [{
+                nombreProducto: "Producto 1",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+                {
+                    nombreProducto: "Producto 2",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 3",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 4",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                }
+            ]
+        },
+         /*Farmacias de ahorro-Far*/ 
+        {
+            nombreEmpresa: "Farmacias del Ahorro",
+            imagen: "img/Salud/Farmacias/4.far.png",
+            productos: [{
+                nombreProducto: "Producto 1",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+                {
+                    nombreProducto: "Producto 2",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 3",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 4",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                }
+            ]
+        }
+    ]
+},
+    {
+        /*******Moda-Tiendas*************/ 
+        nombreCategoria: "Moda",
+        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+        backgroundColor: `style="background-color: ${colorAleatorio()}"`,
+        icono: "fa-solid fa-shirt",
+       /*Carrion-Tienda */
+        empresas: [{
+            nombreEmpresa: "Carrion",
+            imagen: "img/Moda/Tiendas/1.shop.png",
+            productos: [{
+                nombreProducto: "Producto 1",
+                descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                precio: 49.99
+            },
+                {
+                    nombreProducto: "Producto 2",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 3",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                {
+                    nombreProducto: "Producto 4",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                }
+            ]
+        },
+        /*Mendels-Tienda */
+            {
+                nombreEmpresa: "Mendels",
+                imagen: "img/Moda/Tiendas/2.shop.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            },
+            /*Payless-Tienda */
+            {
+                nombreEmpresa: "Payless",
+                imagen: "img/Moda/Tiendas/3.shop.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            },
+             /*Mango-Tienda */
+             {
+                nombreEmpresa: "Mango",
+                imagen: "img/Moda/Tiendas/4.shop.png",
+                productos: [{
+                    nombreProducto: "Producto 1",
+                    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                    precio: 49.99
+                },
+                    {
+                        nombreProducto: "Producto 2",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 3",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    },
+                    {
+                        nombreProducto: "Producto 4",
+                        descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+                        precio: 49.99
+                    }
+                ]
+            }
+        ]
+    },
+    
+   
 ];
 
 //Local Storage Usuarios
@@ -447,8 +551,8 @@ function generarCategorias(valor) {
                             <i class="${categoria.icono} fa-3x m-4 fa-color"></i>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title fi-family fw-bold fs-2 text-light">${categoria.nombreCategoria}</h5>
-                            <p class="card-text fbi-family fs-2  text-light">${categoria.empresas.length} comercios</p>
+                            <h5 class="card-title fw-bold fs-2 text-light">${categoria.nombreCategoria}</h5>
+                            <p class="card-text  fs-2  text-light">${categoria.empresas.length} comercios</p>
                         </div>
                     </div>             
             </div>`;
