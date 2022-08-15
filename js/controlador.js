@@ -2,8 +2,10 @@
 /*USUARIOS*/
 
 var usuarios = [{
-    nombre: "Pedro",
-    apellido: "Martinez",
+    nombre: "Natalia",
+    apellido: "Ramirez",
+    email:"natalia@yahoo.com",
+    password:"1111",
     ordenes: [{
         nombreProducto: "Producto 1",
         descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -19,8 +21,10 @@ var usuarios = [{
     ]
 },
     {
-        nombre: "Juan",
-        apellido: "Perez",
+        nombre: "Johan",
+        apellido: "Claros",
+        email:"johan@gmail.com",
+        password:"2222",
         ordenes: [{
             nombreProducto: "Producto 3",
             descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -36,8 +40,10 @@ var usuarios = [{
         ]
     },
     {
-        nombre: "María",
-        apellido: "Rodríguez",
+        nombre: "Victoria",
+        apellido: "Cruz",
+        email:"vicruz@yahoo.com",
+        password:"3333",
         ordenes: [{
             nombreProducto: "Producto 4",
             descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -662,11 +668,17 @@ function cambiarUsuario (valor){
         generarCategorias(valor);
     }
 }
-/*Justamente eso 
-document.getElementById ('usuarioActual').innerHTML =
-         `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-         role="button" onclick="modalPedidos(${valor})" style=""></a>`;
-*/
+/* Validación de login */
+function validacion() {
+    let username = document.getElementById("email").value; //permite el acceso a un elemento por su id
+   let array = usuarios.username;
+    return arrays.includes(username)
+         } 
+        function esValido() {
+        let valides = validacion()
+       if (valides === true){
+       alert( "exacto" );}}
+
 
 //Genera números aleatorios a partir del número 255
 function generarNumero(numero){
