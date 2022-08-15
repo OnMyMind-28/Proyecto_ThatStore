@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/dbb994acbb.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body >
    <!--Navbar Principal-->
    <nav class="navbar navbar-expand-lg  " style="background-color:#3D0A3B; " >
     <div class="container-fluid">
@@ -87,8 +87,7 @@
         <!--//////-->
         <ul class="navbar-nav align-right">
             <li class="nav-item content-select btn-group-vertical" id="listaUsuarios">
-                <select onchange="cambiarUsuario(value)" class="align-right position-relative fs-6" name="" id="selectUsuarios" style="background-color:orange; width:5px; height: 20px;">
-                </select>
+                
                 <i class="fas fa-caret-down"></i>
             </li>
             <li id="usuarioActual">
@@ -99,7 +98,7 @@
   </nav>
   
 <!--Principal card categorias-->
-<div id="margin" class="mt-5 ">
+<div id="margin" class="mt-5">
     <div class="container-fluid align-items-center">
         <div class="thatS-color  mb-4"  id="saludo">
         </div>
@@ -109,6 +108,40 @@
     </div>
 </div>
 <div style="width: 100%; height: 100px;"></div>
+
+<!--Modal para mostrar usuario y formulario--> 
+<div id="myModal" class="modal modal-inicio">
+<div class="modal-dialog ">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Iniciar Sesión</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <select onchange="cambiarUsuario(value)" class="align-right position-relative fs-6" name="" id="selectUsuarios" style="background-color:orange; width:5px; height: 20px;">
+            </select>
+            <form action="" method="post">
+                <div class="form-group ">
+                    <div class="input-group mt-1">
+                        <span class="input-group-addon "><i class="fa fa-user me-2 mt-2"></i></span>
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                    </div>
+                </div>
+                <div class="form-group mt-2">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock me-2 mt-2"></i></span>
+                        <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <button  type="submit" class="btn btn-warning btn-block btn-lg btn-inicio">Sign In</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer f-modal" >No tienes una cuenta? <a href="#">Registrarse</a></div>
+    </div>
+</div>
+</div>
 
 <!--Modal para mostrar categorías-->
 <div class="modal fade" id="modalCat" tabindex="-1" aria-labelledby="modalCatLabel" aria-hidden="true">

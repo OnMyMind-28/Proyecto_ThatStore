@@ -627,7 +627,9 @@ function generarCategorias(valor) {
             </div>`;
     })
 }
-
+$( document ).ready(function() {
+    $('#myModal').modal('toggle')
+});
 //Genera los usuarios
 function generarUsuarios () {
     document.getElementById('selectUsuarios').innerHTML = `<option value="-1" selected>Usuarios</option>`;

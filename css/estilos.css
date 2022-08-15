@@ -10,9 +10,19 @@ html {
 .prod-text{
     justify-content: center;
     display: flex;
-    
-    
-  }
+} 
+/*Modal Inicio sesión*/
+.modal-inicio{
+  margin-top: 40%;
+}
+
+.btn-inicio{
+   margin-left: 6.5rem;
+}
+.f-modal{
+    margin-right: 2.5rem;
+}
+/*************************************************************************************/
 .content-input input,
 .content-select select{
     appearance: none;
