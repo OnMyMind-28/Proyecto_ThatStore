@@ -505,7 +505,7 @@ var categorias = [
                 },
                     {
                         nombreProducto: "Producto 2",
-                        urlImagen: "img/Moda/Productos/1.bag.png",
+                        urlImagen: "img/Moda/Productos/7.woman.png",
                         descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
                         precio: 280.00
                     },
@@ -622,7 +622,7 @@ function generarCategorias(valor) {
                         </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold fs-2 text-light">${categoria.nombreCategoria}</h5>
-                            <p class="card-text  fs-2  text-light">${categoria.empresas.length} comercios</p>
+                            <p class="card-text  fs-2  text-light"></p>
                         </div>
                     </div>             
             </div>`;
@@ -687,16 +687,18 @@ function modalCat(i, valor) {
         let productos = '';
         empresa.productos.forEach (function (prod,k){
             productos += `<div class="col-8">
-                                           <p>${prod.nombreProducto}</p>
+                                        
+                                           <p class="mt-3 mb-3">${prod.nombreProducto}</p>
                                         </div>
                                         <img class="img-fluid" src="${prod.urlImagen}" alt="">
 
                                         <div class="row">
                                         <div class="col">
                                         <p class="" id="descripcionProducto">${prod.descripcion}</p>
-                                            <p class="text-end" id="precioProducto">Precio: L.${prod.precio}</p>
+                                            <p class="text-end mx-4" id="precioProducto">Precio: L.${prod.precio}</p>
                                             <div class="col">
-                                            <button class="btn btn-warning rounded-pill px-4 align-self-end" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
+                                            <button class="btn btn-warning rounded-pill px-5 align-self-end mx-4" style="color: white;" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
+                                           <hr class="">
                                             </div>
                                            
                                         </div>
