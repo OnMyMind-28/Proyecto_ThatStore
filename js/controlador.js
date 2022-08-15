@@ -578,7 +578,6 @@ function cambiarUsuario (valor){
         console.log('No se ha seleccionado un usuario o la lista está vacía')
     }else {
         let usuarioActual = usuarios [valor];
-         HEAD
         document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
     role="button" onclick="modalPedidos(${valor})">Ver
     ordenes</a>`;
@@ -649,7 +648,7 @@ function modalNegocios (i, j, k, valor) {
     document.getElementById('modalDescripcionProducto').innerHTML=producto.descripcion;
     document.getElementById('modalPrecio').innerHTML=producto.precio;
     document.getElementById('inputCantidad').value;
-    document.getElementById ('btnOrdenar').innerHTML = `<button type="button" class="btn top-thatS shadow-none rounded-pill text-light" onclick="ordenar(${valor})">Procesar Orden</button>`
+    document.getElementById ('btnOrdenar').innerHTML = `<button type="button" class="btn btn-warning shadow-none rounded-pill text-light" onclick="ordenar(${valor})">Procesar Orden</button>`
     $('#modalNegocios').modal('show');
 
 }
