@@ -1,4 +1,18 @@
 /*********************************************************************************/
+html {
+    height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+.prod-text{
+    justify-content: center;
+    display: flex;
+    
+    
+  }
 .content-input input,
 .content-select select{
     appearance: none;
@@ -32,7 +46,6 @@
     color: #F6BD3B;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius: 25px;
-  /*  position: relative;*/
     transition: all 0.25s ease;
 }
 
@@ -58,19 +71,25 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 }
   /******************************************************************************************/
   /*Footer*/
+
   
   .foot{
     background-color: hsla(274, 33%, 62%, 0.743);
-    justify-content:center;  
+    position:fixed;
     font-family: sans-serif;
     font-size: 12px;
-    height: 150px;
-    
+    left:0px;
+    bottom:0px;
+    margin-top: 5px;
+    height: 65px;
+    width: 100%;
+   
+
   }  
 
 /****************************************************************************************s*/
 
-
+/*Card Categorias centrado*/
 #margin {
     margin-left: 9rem;
     margin-right: 9rem;
@@ -127,7 +146,7 @@ general-font {
 
 
 .card {
-    border-radius: 2.5rem;
+    border-radius: 1rem !important;
 }
 
 .text-shadow {
@@ -145,15 +164,19 @@ general-font {
     height: 240px;
     margin-left: 5px;
 }
-
-
-
-@media (max-width: 1100px) {
-    #margin {
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*Posicionamiento responsive card principal categorias*/
+@media (max-width: 360px) {
+#margin {
+    margin-left: 2rem;
+    margin-right: auto;
 }
+}
+
+
+
+
+
+
 
 @media (max-width: 315px) {
     #cat div {

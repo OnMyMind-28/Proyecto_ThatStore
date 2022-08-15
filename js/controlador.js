@@ -613,10 +613,9 @@ function generarCategorias(valor) {
     document.getElementById('cat').innerHTML = '';
     categorias.forEach(function (categoria,i) {
         document.getElementById('cat').innerHTML +=
-            `<div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto mb-2 me-2" >
+            `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 me-2" >
                     <div class="card" ${categoria.backgroundColor} onclick="modalCat(${i}, ${valor})">                 
-                    <a class=" href="Administracion.html" 
-                    role="button"  style=""></a>
+                    
                     <div>
                             <i class="${categoria.icono} fa-3x m-4 fa-color"></i>
                         </div>
@@ -695,9 +694,9 @@ function modalCat(i, valor) {
                                         <div class="row">
                                         <div class="col">
                                         <p class="" id="descripcionProducto">${prod.descripcion}</p>
-                                            <p class="text-end mx-4" id="precioProducto">Precio: L.${prod.precio}</p>
+                                            <p class="text-end prod-text" id="precioProducto">Precio: L.${prod.precio}</p>
                                             <div class="col">
-                                            <button class="btn btn-warning rounded-pill px-5 align-self-end mx-4" style="color: white;" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
+                                            <button class="btn btn-warning rounded-pill px-5 align-self-end prod-text" style="color: white;" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
                                            <hr class="">
                                             </div>
                                            
