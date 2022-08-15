@@ -578,9 +578,9 @@ function cambiarUsuario (valor){
         console.log('No se ha seleccionado un usuario o la lista está vacía')
     }else {
         let usuarioActual = usuarios [valor];
-        document.getElementById ('usuarioActual').innerHTML =
-         `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-         role="button" onclick="modalPedidos(${valor})" style="background-color: white;"></a>`;
+        document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+    role="button" onclick="modalPedidos(${valor})">Ver
+    ordenes</a>`;
         document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
             <h1></h1>`
         console.log('Este es el valor ' + valor);
@@ -623,7 +623,7 @@ function modalCat(i, valor) {
                                 <div class="card-body p-0">
                                     <div class="position-relative d-block" id="imagenModal">
                                         <img class="img-fluid rounded-top " src="${empresa.imagen}">
-                                        <div class="position-absolute top fa-color text-shadow"></div>
+                                        <div class="position-absolute top fa-color f-family text-shadow"></div>
                                     </div>
                                         <hr>
                                     <div class="row p-2" >
@@ -644,7 +644,7 @@ function modalNegocios (i, j, k, valor) {
     document.getElementById('modalDescripcionProducto').innerHTML=producto.descripcion;
     document.getElementById('modalPrecio').innerHTML=producto.precio;
     document.getElementById('inputCantidad').value;
-    document.getElementById ('btnOrdenar').innerHTML = `<button type="button" class="btn btn-warning shadow-none rounded-pill " onclick="ordenar(${valor})">Procesar Orden</button>`
+    document.getElementById ('btnOrdenar').innerHTML = `<button type="button" class="btn top-thatS shadow-none rounded-pill text-light" onclick="ordenar(${valor})">Procesar Orden</button>`
     $('#modalNegocios').modal('show');
 
 }
