@@ -580,7 +580,7 @@ function cambiarUsuario (valor){
         let usuarioActual = usuarios [valor];
         document.getElementById ('usuarioActual').innerHTML =
          `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-         role="button" onclick="modalPedidos(${valor})" style="background-color: white;"></a>`;
+         role="button" onclick="modalPedidos(${valor})" style=""></a>`;
         document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
             <h1></h1>`
         console.log('Este es el valor ' + valor);
