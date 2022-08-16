@@ -670,9 +670,9 @@ function cambiarUsuario (valor){
 }
 /* Validación de login */
 function validacion() {
-    let username = document.getElementById("email").value; //permite el acceso a un elemento por su id
-   let array = usuarios.username;
-    return arrays.includes(username)
+    let username = document.getElementById('usuarios').value; //permite el acceso a un elemento por su id
+   let arrays = usuarios.username;
+    return arrays.includes(username.email, username.password)
          } 
         function esValido() {
         let valides = validacion()
