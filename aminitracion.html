@@ -14,38 +14,94 @@
 
 </head>
 <body>
-  <!--Navbar Principal-->
-  <nav class="navbar navbar-expand-lg  " style="background-color:#3D0A3B; " >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <!--<img src="img/Logo/1.logo.png" > -->
-        <img src="img/Logo/1.logo.png" >
-        <span  class="navbar-toggler-icon"></span>
-      <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-    </nav>
+   <!--Header -->
+    <!--Pagina Principal-->
+   <header class="encabezado" >
+    <div align="Left" style="background-color: hsla(301, 68%, 21%, 0.58);">
+    <img src="img/Administracion/logo.png"></div>
+    </header>
+    <h1 id="ad-text"  align="center"  class="t-2" style="color:hsla(0, 0%, 0%, 0.751);" > Administración </h1> 
+
+<!--Prueb div 2x2-->
+<div class="container   ">
+    <div class="box "  id=" Ordenes" onclick="mostrarrAdminEmpresas()"
+    style="background-image: url('img/Administracion/f.png');">
+     <a href="InicioAdministracion.html" class="link-warning" align="center" >
+        Administrar Empresas</a>
+    </div>
+
+    <div class="box" onclick="mostrarAdminProductos ()"
+        style="background-image: url('img/Administracion/Teclado.png');">
+        <a href="AdmiProduc.html" class="link-secondary"> 
+            Administrar Productos </a>
+    </div>
+    
+    <div class="box  " id=" Ordenes" onclick="mostrarOrdenes()"
+      style="background-image: url('img/Administracion/Ordesr.png'); ">
+        <a href="ordenes.html"  class="link-warning" align="center" >
+             Ordenes</a>
+    </div>
+    <div class="box"  id=" Ordenes" onclick="mostrarMotorista()"
+       style="background-image: url('img/Administracion/motorisas.png'); ">
+        <a href="InicioMotoristas.html"   class="link-light">
+             Motorista</a>
+    </div>
+  </div>
+
+
+ <!--pagina de Aministracion de empresas -->
+ <div  class="btn_back   mt-3">
+  <button type="button" data-toggle="modal" 
+  data-target="#staticBackdrop" 
+  class="btn btn_primary btn_large">Agregar Producto</button></div>
+  
+  <div class="modal fade" id="staticBackdrop"
+  data-backdrop="static" data-keyboard="false" 
+  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <strong><h2 class="modal-title" 
+              id="staticBackdropLabel">AGREGAR UNA NUEVO PRODUCTO</h2></strong>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <label for="nombre" class="form-label">Nombre del producto</label>
+              <input type="text" class="form-control" id="txtcomp" value="" required>
+              <div class="aggcomp">
+                <div>
+                    <label for="cat" class="form-label">Categoría</label>
+                    <select class="form-control" id="lista-cat">
+                    </select>
+                </div>
+                  <div> 
+                    <label for="imagen" class="form-label">Presentacion </label>
+                    <select class="form-control" id="lista-imagenes"> Subir una imagen
+                    </select>
+                  </div> 
+                  <div>
+                    <label for="desde" class="form-label">Desde</label>
+                    <input type="date" class="form-control" id="desdecomp" value="" required>
+                  </div>
+                    <div>
+                    <label for="vence" class="form-label">Vence</label>
+                    <input type="date" class="form-control" id="vencecomp" value="" required>
+                  </div>
+                </div>
+           
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn_secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn_primary">Agregar Producto</button>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  
-  <div class="modal fade" id="modalCat" tabindex="-1" aria-labelledby="modalCatLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header ">
-                <h4 class="modal-title" id="modalTitulo"></h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row" id="modalRow">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </div>
-
-
-
 
 
 
