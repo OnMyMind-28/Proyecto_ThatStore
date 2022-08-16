@@ -734,7 +734,6 @@ function modalCat(i, valor) {
     })
     $('#modalCat').modal('show');
 }
-<!-Ya wey bye lap de RJ--->
 //Ventana modal de los negocios
 function modalNegocios (i, j, k, valor) {
     let usuarioActual = usuarios [valor];
