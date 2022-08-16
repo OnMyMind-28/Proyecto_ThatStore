@@ -668,6 +668,19 @@ function cambiarUsuario (valor){
         generarCategorias(valor);
     }
 }
+
+/* Vali */
+function login (valor){
+    if (valor ==-1){
+        modalAlerta ();
+        document.getElementById ('usuarioAct').innerHTML ='';
+        console.log('No estas resgristrado')
+    }else {
+    let username = usuarios [valor];
+    document.getElementById('usuarioAct').innerHTML=
+     ``
+    }
+}
 /* Validación de login */
 function validacion() {
     let username = document.getElementById('usuarios').value; //permite el acceso a un elemento por su id
@@ -699,22 +712,20 @@ function modalCat(i, valor) {
     cat.empresas.forEach(function (empresa,j){
         let productos = '';
         empresa.productos.forEach (function (prod,k){
-            productos += `<div class="col-8">
-                                        
-                                           <p class="mt-3 mb-3">${prod.nombreProducto}</p>
-                                        </div>
-                                        <img class="img-fluid" src="${prod.urlImagen}" alt="">
-
-                                        <div class="row">
-                                        <div class="col">
-                                        <p class="" id="descripcionProducto">${prod.descripcion}</p>
-                                            <p class="text-end prod-text" id="precioProducto">Precio: L.${prod.precio}</p>
-                                            <div class="col">
-                                            <button class="btn btn-warning rounded-pill px-5 align-self-end prod-text" style="color: white;" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
+            productos += `<div class="col-8">                     
+            <p class="mt-3 mb-3">${prod.nombreProducto}</p>
+            </div>
+            <img class="img-fluid" src="${prod.urlImagen}" alt="">
+            <div class="row">
+                <div class="col">
+                    <p class="" id="descripcionProducto">${prod.descripcion}</p>
+                         <p class="text-end prod-text" id="precioProducto">Precio: L.${prod.precio}</p>
+                             <div class="col">
+                                     <button class="btn btn-warning rounded-pill px-5 align-self-end prod-text" style="color: white;" type="button" onclick="modalNegocios(${i}, ${j}, ${k}, ${valor})">Pedir</button>
                                            <hr class="">
-                                            </div>
+                                </div>
                                            
-                                        </div>
+                        </div>
                                     </div>`;
         });
         document.getElementById('modalRow').innerHTML += `<div class="col-md-6">
