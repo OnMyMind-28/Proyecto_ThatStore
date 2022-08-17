@@ -670,21 +670,20 @@ function cambiarUsuario (valor){
     }
 }
 /**************************************************************************************** */
-var intentos = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
+var intentos = 3; // variable para contar el numero de intentos.
+
 function validacion(valor){
- let user = usuarios [valor];   
+let user = usuarios [valor];   
 var username = document.getElementById('username').value;
 var password = document.getElementById('password').value;
 if ( username == user.email && password == user.password){
-alert ('¡Bienvenido a ThatStore!');
-generarCategorias(valor); // Redirecting to other page.
-return false;
+
+generarCategorias(valor); //redirecionamiento a las categorias.
+return true;
 }
 else{
-attempt --;// Decrementing by one.
+intentos --;
 alert('You have left '+intentos+' attempt;');
-// Disabling fields after 3 attempts.
 if( intentos == 0){
 document.getElementById('username').disabled = true;
 document.getElementById('password').disabled = true;
@@ -693,60 +692,6 @@ return false;
 }
 }
 }
-/* Vali */
-function login2 (valor){
-    let user = usuarios [valor];
-    document.getElementById ('myModal').innerHTML ='';
-    let usuarioActual = usuarios [valor];
-
-    if (condition) {
-        
-    }
-
-        document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-    role="button" onclick="modalPedidos(${valor})">Ver
-    ordenes</a>`;
-    document.getElementById ('myModal').innerHTML =
-         `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-         role="button" onclick="modalPedidos(${valor})" style=""></a>`;
-        document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
-            <h1></h1>`
-        console.log('Este es el valor ' + valor);
-        generarCategorias(valor);
-}
-/* Validación de login */
-function login() {
-
-        var usuario=usuarios; 
-        var usuario=document.myModal.usuario.value; 
-        var password=document.myModal.password.value; 
-        if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
-            let usuarioActual = usuarios [valor];
-            document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-        role="button" onclick="modalPedidos(${valor})">Ver
-        ordenes</a>`;
-    
-            document.getElementById ('usuarioActual').innerHTML =
-             `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
-             role="button" onclick="modalPedidos(${valor})" style=""></a>`;
-            document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
-                <h1></h1>`
-            console.log('Este es el valor ' + valor);
-            generarCategorias(valor);
-        } 
-        if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
-            generarCategorias(valor);
-        }
-        } 
-        if (usuario=="" && password=="") { 
-        window.location="errorpopup.html"; 
-        } 
-        
-      
-       
-
-
->>>>>>> 311bdb52db783184bc702485fad9769611201330
 //Genera números aleatorios a partir del número 255
 function generarNumero(numero){
     return (Math.random()*numero).toFixed(0);
