@@ -344,6 +344,7 @@ var categorias = [
         nombreEmpresa: "Siman",
         imagen: "img/Salud/Farmacias/1.far.png",
         productos: [{
+            
             nombreProducto: "Producto 1",
             urlImagen: "img/Salud/Productos/1.farm.png",
             descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
@@ -592,6 +593,7 @@ var categorias = [
     
    
 ];
+/*window.location = "aminitracion.html"; // Redirecting to other page. */
 
 //Local Storage Usuarios
 var localStorageUsuario = window.localStorage;
@@ -621,10 +623,10 @@ function generarCategorias(valor) {
                     <div class="card" ${categoria.backgroundColor} onclick="modalCat(${i}, ${valor})">                 
                     
                     <div>
-                            <i class="${categoria.icono} fa-3x m-4 fa-color"></i>
+                            <i class="${categoria.icono} fa-3x m-3 fa-color"></i>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold fs-2 text-light">${categoria.nombreCategoria}</h5>
+                            <h5 class="card-title fw-bold  text-light font-size">${categoria.nombreCategoria}</h5>
                             <p class="card-text  fs-2  text-light"></p>
                         </div>
                     </div>             
@@ -634,6 +636,7 @@ function generarCategorias(valor) {
 $( document ).ready(function() {
     $('#myModal').modal('toggle')
 });
+
 //Genera los usuarios
 function generarUsuarios () {
     document.getElementById('selectUsuarios').innerHTML = `<option value="-1" selected>Usuarios</option>`;
@@ -668,27 +671,56 @@ function cambiarUsuario (valor){
 }
 
 /* Vali */
-function login (valor){
-    if (valor ==-1){
-        modalAlerta ();
-        document.getElementById ('usuarioAct').innerHTML ='';
-        console.log('No estas resgristrado')
-    }else {
-    let username = usuarios [valor];
-    document.getElementById('usuarioAct').innerHTML=
-     ``
+function login2 (valor){
+    let user = usuarios [valor];
+    document.getElementById ('myModal').innerHTML ='';
+    let usuarioActual = usuarios [valor];
+
+    if (condition) {
+        
     }
+
+        document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+    role="button" onclick="modalPedidos(${valor})">Ver
+    ordenes</a>`;
+    document.getElementById ('myModal').innerHTML =
+         `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+         role="button" onclick="modalPedidos(${valor})" style=""></a>`;
+        document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
+            <h1></h1>`
+        console.log('Este es el valor ' + valor);
+        generarCategorias(valor);
 }
 /* Validación de login */
-function validacion() {
-    let username = document.getElementById('usuarios').value; //permite el acceso a un elemento por su id
-   let arrays = usuarios.username;
-    return arrays.includes(username.email, username.password)
-         } 
-        function esValido() {
-        let valides = validacion()
-       if (valides === true){
-       alert( "exacto" );}}
+function login() {
+
+        var usuario=usuarios; 
+        var usuario=document.myModal.usuario.value; 
+        var password=document.myModal.password.value; 
+        if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
+            let usuarioActual = usuarios [valor];
+            document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+        role="button" onclick="modalPedidos(${valor})">Ver
+        ordenes</a>`;
+    
+            document.getElementById ('usuarioActual').innerHTML =
+             `<a class="fa-solid fa-cart-shopping rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+             role="button" onclick="modalPedidos(${valor})" style=""></a>`;
+            document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
+                <h1></h1>`
+            console.log('Este es el valor ' + valor);
+            generarCategorias(valor);
+        } 
+        if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
+            generarCategorias(valor);
+        }
+        } 
+        if (usuario=="" && password=="") { 
+        window.location="errorpopup.html"; 
+        } 
+        
+      
+       
 
 
 //Genera números aleatorios a partir del número 255
@@ -743,6 +775,39 @@ function modalCat(i, valor) {
     })
     $('#modalCat').modal('show');
 }
+/*
+//Generar empresa
+function generarempresa(){
+    document.getElementById('empresas').innerHTML = '';//para que al momento de guardar una nueva app no aparezacn nuevamente todas app sino, solo la que estamos guardando
+        empresa.forEach(function(emp, i){
+        //para la calificacion con estrellas
+        let estrellas = '';
+        for (let i = 0; i < emp.calificacion; i++) {
+            estrellas += '<i class="fa-solid fa-star"></i>';  
+        }for (let i = 0; i < 5-emp.calificacion; i++) {
+            estrellas += '<i class="fa-regular fa-star"></i>';  
+        }
+        
+       
+        //para mostrar las emp creadas en los en JSON 
+        document.getElementById('empresa').innerHTML += 
+        `<div class=" col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> 
+               <div class="card">
+                  <img src="${emp.imagen}" class="card-img-top" onclick="editarApp(${i})">
+                  <div class="card-body">
+                    <h5 class="card-title">${emp.nombreEmpresa}</h5>
+                    <p class="card-text"> Categoría: ${emp.nombreCategoria}</p>
+                    <a href="DetallesProductos.html">
+                    <div >
+                       <button class="btn btn-warning btn-sm " style="float:center " >Comprar</button> 
+                    </div>
+                    </a>
+                </div>
+               </div>
+            </div>`;
+    }); /*Para el boton de compras el direccionamineto al producto se hara mediante el indice
+}
+generarEmpresa()*/
 //Ventana modal de los negocios
 function modalNegocios (i, j, k, valor) {
     let usuarioActual = usuarios [valor];
