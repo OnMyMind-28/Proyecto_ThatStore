@@ -18,10 +18,10 @@
 </head>
 
 <body >
-   <!--Navbar Principal-->
+   <!--Navbar Principal -->
    <nav class="navbar navbar-expand-lg  " style="background-color:#3D0A3B; " >
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html"> 
         <!--<img src="img/Logo/1.logo.png" > -->
         <img class="" src="img/Logo/1.logo.png" >
       </a>
@@ -99,11 +99,21 @@
   </nav>
   
 <!--Principal card categorias-->
-<div id="margin" class="mt-5">
+<div id="margin" class="mt-3">
     <div class="container-fluid align-items-center">
         <div class="thatS-color  mb-4"  id="saludo">
         </div>
         <div class="row" id="cat">
+
+        </div>
+    </div>
+</div>
+<!--Empresas-->
+<div id="margin" class="mt-3">
+    <div class="container-fluid align-items-center">
+        <div class="thatS-color  mb-4"  id="saludo">
+        </div>
+        <div class="row" id="empresas">
 
         </div>
     </div>
@@ -125,17 +135,17 @@
                 <div class="form-group ">
                     <div class="input-group mt-1">
                         <span class="input-group-addon "><i class="fa fa-user me-2 mt-2" ></i></span>
-                        <input type="text" class="form-control" id="usuarioAct" name="username" placeholder="Username" required="required">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required="required">
                     </div>
                 </div>
                 <div class="form-group mt-2">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-lock me-2 mt-2"></i></span>
-                        <input type="text" class="form-control" id="usuarioAct" name="password" placeholder="Password" required="required">
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" required="required">
                     </div>
                 </div>
                 <div class="form-group mt-3">
-                    <button id="acceder"  type="submit" class="btn btn-warning btn-block btn-lg btn-inicio" onclick="esValido()">Sign In</button>
+                    <button id="acceder"  type="submit" class="btn btn-warning btn-block btn-lg btn-inicio" onclick="login()">Sign In</button>
                 </div>
             </form>
         </div>
