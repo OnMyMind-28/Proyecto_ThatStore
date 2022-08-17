@@ -167,7 +167,7 @@ general-font {
     top: 65% !important;
     left: 7%;
 }
-
+/*control de tamaño de card categorias inicio*/
 #cat div {
     width: 320px;
     height: 140px;
