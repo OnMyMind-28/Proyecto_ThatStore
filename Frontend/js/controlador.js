@@ -912,3 +912,4 @@ function agregarCat () {
     generarCategorias(-1);
     $('#modalAgregar').modal('hide');
 }
+
