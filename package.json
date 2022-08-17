@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "init": "^0.1.2",
+    "nodemon": "^2.0.19"
+  },
+  "name": "proyecto_thatstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnMyMind-28/Proyecto_ThatStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnMyMind-28/Proyecto_ThatStore/issues"
+  },
+  "homepage": "https://github.com/OnMyMind-28/Proyecto_ThatStore#readme",
+  "description": ""
+}
