@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require('express'); 
 var bodyParser = require ('body-parser');
 
@@ -63,3 +64,5 @@ app.use('/usuarios');
 app.listen(4200, function(){
     console.log("Servidor en linea");
 });*/
+=======
+>>>>>>> 24a4975576e7fae3ee67fd23252014793186c535
