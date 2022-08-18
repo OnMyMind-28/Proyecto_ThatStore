@@ -656,7 +656,26 @@ function cambiarUsuario (valor){
         console.log('No se ha seleccionado un usuario o la lista está vacía')
     }else {
         let usuarioActual = usuarios [valor];
-        document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
+     
+        document.getElementById ('usuarioActual').innerHTML =
+         `<a class="fa-solid fa-cart-shopping shadow-none border-0 m-car " href="#" 
+         role="button" onclick="modalPedidos(${valor})" ></a>`;
+        document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
+            <h1></h1>`
+        console.log('Este es el valor ' + valor);
+        generarCategorias(valor);
+    }
+}
+
+/**************************************************************************************** */
+var intentos = 3; // variable para contar el numero de intentos.
+
+function validacion(valor){
+let user = usuarios [valor];   
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+if ( username == user.email && password == user.password){
+document.getElementById ('usuarioActual').innerHTML = `<a class="btn btn-lg btn-primary rounded-pill px-5 shadow-none border-0 mx-3" href="#" 
     role="button" onclick="modalPedidos(${valor})">Ver
     ordenes</a>`;
 
@@ -666,24 +685,12 @@ function cambiarUsuario (valor){
         document.getElementById ('saludo').innerHTML = `<h1 class="f-family"></h1>
             <h1></h1>`
         console.log('Este es el valor ' + valor);
-        generarCategorias(valor);
-    }
-}
-/**************************************************************************************** */
-var intentos = 3; // variable para contar el numero de intentos.
-
-function validacion(valor){
-let user = usuarios [valor];   
-var username = document.getElementById('username').value;
-var password = document.getElementById('password').value;
-if ( username == user.email && password == user.password){
-
+        
 generarCategorias(valor); //redirecionamiento a las categorias.
 return true;
 }
 else{
 intentos --;
-alert('You have left '+intentos+' attempt;');
 if( intentos == 0){
 document.getElementById('username').disabled = true;
 document.getElementById('password').disabled = true;

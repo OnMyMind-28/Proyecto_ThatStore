@@ -173,6 +173,10 @@ general-font {
     height: 140px;
     margin-left: 5px;
 }
+.m-car{
+    margin-left: 200px;
+    color: white;
+}
 /*Posicionamiento responsive card principal categorias*/
 @media (max-width: 360px) {
 #margin {
